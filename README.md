@@ -84,4 +84,31 @@ branch 'master' set up to track 'origin/master'.
 
 HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
 $
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout dev
+Switched to branch 'dev'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (dev)
+$ git checkout dev
+Already on 'dev'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (dev)
+$ git checkout test
+error: pathspec 'test' did not match any file(s) known to git
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (dev)
+$ git branch test
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (dev)
+$ git checkout test
+Switched to branch 'test'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (test)
+$ git checkout dev
+Switched to branch 'dev'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (dev)
+$ git branch -d test
+Deleted branch test (was a7d2f3c).
+
 ```
