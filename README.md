@@ -113,7 +113,7 @@ Deleted branch test (was a7d2f3c).
 
 ```
 # Bundle 1
-# Excercise 2
+## Excercise 2
 ```
 HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
 $ git checkout dev
@@ -1031,3 +1031,290 @@ README.md  about.html  home.html  team.html
 HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
 $
 ```
+# Bundle 2
+## Excercise 2
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ l
+bash: l: command not found
+s
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 4.47 KiB | 101.00 KiB/s, done.
+From https://github.com/Hassanadelani1/gym-GIT-exercises
+   148ffde..3d95f2e  master     -> origin/master
+Updating 148ffde..3d95f2e
+Fast-forward
+ README.md     | 923 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ services.html |  11 +
+ 2 files changed, 932 insertions(+), 2 deletions(-)
+ create mode 100644 services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/service-redesign
+* master
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesigned
+error: pathspec 'ft/service-redesigned' did not match any file(s) known to git
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git branch master
+fatal: a branch named 'master' already exists
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git branch -D ft/service-redesign
+Deleted branch ft/service-redesign (was 148ffde).
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git branch ft/service-redesign
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ code services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git add .
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git commit -m 'made some changes to the services page'
+[ft/service-redesign a4f0cb3] made some changes to the services page
+ 1 file changed, 1 insertion(+)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$  git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 172.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Hassanadelani1/gym-GIT-exercises/pull/new/ft/service-redesign
+remote:
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git branch master
+fatal: a branch named 'master' already exists
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ code services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 922 bytes | 102.00 KiB/s, done.
+From https://github.com/Hassanadelani1/gym-GIT-exercises
+   3d95f2e..64a2e42  master     -> origin/master
+Updating 3d95f2e..64a2e42
+Fast-forward
+ services.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ code services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git add .
+g
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git commit -m 'made some changes to the services file'
+[master c5e7838] made some changes to the services file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 171.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+   64a2e42..c5e7838  master -> master
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git diff master ft/service-redesign
+diff --git a/services.html b/services.html
+index d1d5676..d103b92 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <h2>Services page</h2>
+-    <p>The changes made(from the master branch)</p>
++    <p>The changes made</p>
+ </body>
+ </html>
+\ No newline at end of file
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git switch main
+fatal: invalid reference: main
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git merge ft/service-redesign
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git merge
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git switch ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git pull
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git diff master ft/service-redesign
+diff --git a/services.html b/services.html
+index d1d5676..d103b92 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <h2>Services page</h2>
+-    <p>The changes made(from the master branch)</p>
++    <p>The changes made</p>
+ </body>
+ </html>
+\ No newline at end of file
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ gitpull
+bash: gitpull: command not found
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git pull
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git merge ft/service-redesign
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$
+
