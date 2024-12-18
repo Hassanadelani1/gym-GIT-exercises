@@ -2134,3 +2134,80 @@ To https://github.com/Hassanadelani1/gym-GIT-exercises.git
  * [new branch]      ft/squashing -> ft/squashing
 ```
 
+# Bundle 5
+## Excercise 2
+```
+
+HP@Hassan MINGW64 ~
+$ git clone https://github.com/Hassanadelani1/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 110, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 110 (delta 7), reused 4 (delta 4), pack-reused 93 (from 1)
+Receiving objects: 100% (110/110), 1.95 MiB | 2.80 MiB/s, done.
+Resolving deltas: 100% (7/7), done.
+
+HP@Hassan MINGW64 ~
+$ git remote add upstream https://github.com/TheGymRwanda/git-cafe-exercise
+fatal: not a git repository (or any of the parent directories): .git
+
+HP@Hassan MINGW64 ~
+$ cd git-cafe-exercise/
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (main)
+$ $ git remote add upstream https://github.com/TheGymRwanda/git-cafe-exercise
+bash: $: command not found
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (main)
+$ git remote add upstream https://github.com/TheGymRwanda/git-cafe-exercise
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (main)
+$ git fetch upstream
+From https://github.com/TheGymRwanda/git-cafe-exercise
+ * [new branch]      main       -> upstream/main
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (main)
+$ git merge upstream/main
+Already up to date.
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (main)
+$ git merge upstream/main
+Already up to date.
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (main)
+$ git rebase upstream/main
+Current branch main is up to date.
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (main)
+$ git checkout -b change-on-indexfile
+Switched to a new branch 'change-on-indexfile'
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (change-on-indexfile)
+$ git add .
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (change-on-indexfile)
+$ git commit -m 'make a change in the index.html'
+On branch change-on-indexfile
+nothing to commit, working tree clean
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (change-on-indexfile)
+$ git push
+fatal: The current branch change-on-indexfile has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin change-on-indexfile
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (change-on-indexfile)
+$ git push origin (change-on-indexfile'
+bash: syntax error near unexpected token `('
+
+HP@Hassan MINGW64 ~/git-cafe-exercise (change-on-indexfile)
+$ $ git push origin change-on-indexfile
+bash: $: command not found
+```
+
