@@ -2011,4 +2011,126 @@ remote: Resolving deltas: 100% (26/26), done.
 To https://github.com/Hassanadelani1/git-copy
  * [new branch]      master -> master
 ```
+# Bundle 4
+## Excersise 2
+```
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git branch ft/footer
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git switch ft/footer
+Switched to branch 'ft/footer'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ code team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ git add .
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ git commit -m 'made some changes to team.html'
+[ft/footer 1baff81] made some changes to team.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ code services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ git status
+On branch ft/footer
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   services.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ git add .
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ git commit -m 'made some changes to the services.html'
+[ft/footer aab7710] made some changes to the services.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ git push
+fatal: The current branch ft/footer has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/footer
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$  git push --set-upstream origin ft/footer
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (14/14), 3.28 KiB | 258.00 KiB/s, done.
+Total 14 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (8/8), completed with 5 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Hassanadelani1/gym-GIT-exercises/pull/new/ft/footer
+remote:
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ git push
+Everything up-to-date
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/footer)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git branch ft/squashing
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git merge --squash ft/footer
+Updating 941e610..aab7710
+Fast-forward
+Squash commit -- not updating HEAD
+ services.html | 2 +-
+ team.html     | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   services.html
+        modified:   team.html
+
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git commit -m "footer changes squashing"
+[master cd6e8a0] footer changes squashing
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git push origin ft/squashing
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Hassanadelani1/gym-GIT-exercises/pull/new/ft/squashing
+remote:
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+ * [new branch]      ft/squashing -> ft/squashing
+```
 
