@@ -113,7 +113,7 @@ Deleted branch test (was a7d2f3c).
 
 ```
 # Bundle 1
-# Excercise 2
+## Excercise 2
 ```
 HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
 $ git checkout dev
@@ -1031,3 +1031,697 @@ README.md  about.html  home.html  team.html
 HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
 $
 ```
+# Bundle 2
+## Excercise 2
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ l
+bash: l: command not found
+s
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (5/5), 4.47 KiB | 101.00 KiB/s, done.
+From https://github.com/Hassanadelani1/gym-GIT-exercises
+   148ffde..3d95f2e  master     -> origin/master
+Updating 148ffde..3d95f2e
+Fast-forward
+ README.md     | 923 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ services.html |  11 +
+ 2 files changed, 932 insertions(+), 2 deletions(-)
+ create mode 100644 services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/service-redesign
+* master
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesigned
+error: pathspec 'ft/service-redesigned' did not match any file(s) known to git
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git branch master
+fatal: a branch named 'master' already exists
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git branch -D ft/service-redesign
+Deleted branch ft/service-redesign (was 148ffde).
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git branch ft/service-redesign
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ code services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git add .
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git commit -m 'made some changes to the services page'
+[ft/service-redesign a4f0cb3] made some changes to the services page
+ 1 file changed, 1 insertion(+)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$  git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 172.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+remote:      https://github.com/Hassanadelani1/gym-GIT-exercises/pull/new/ft/service-redesign
+remote:
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+ * [new branch]      ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git branch master
+fatal: a branch named 'master' already exists
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ code services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 922 bytes | 102.00 KiB/s, done.
+From https://github.com/Hassanadelani1/gym-GIT-exercises
+   3d95f2e..64a2e42  master     -> origin/master
+Updating 3d95f2e..64a2e42
+Fast-forward
+ services.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ code services.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git add .
+g
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git commit -m 'made some changes to the services file'
+[master c5e7838] made some changes to the services file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 342 bytes | 171.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+   64a2e42..c5e7838  master -> master
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git checkout ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git diff master ft/service-redesign
+diff --git a/services.html b/services.html
+index d1d5676..d103b92 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <h2>Services page</h2>
+-    <p>The changes made(from the master branch)</p>
++    <p>The changes made</p>
+ </body>
+ </html>
+\ No newline at end of file
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git switch main
+fatal: invalid reference: main
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git merge ft/service-redesign
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git merge
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git switch ft/service-redesign
+Switched to branch 'ft/service-redesign'
+Your branch is up to date with 'origin/ft/service-redesign'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git pull
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git diff master ft/service-redesign
+diff --git a/services.html b/services.html
+index d1d5676..d103b92 100644
+--- a/services.html
++++ b/services.html
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+     <h2>Services page</h2>
+-    <p>The changes made(from the master branch)</p>
++    <p>The changes made</p>
+ </body>
+ </html>
+\ No newline at end of file
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ gitpull
+bash: gitpull: command not found
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git pull
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/service-redesign)
+$ git switch master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git merge ft/service-redesign
+Already up to date.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$
+# Bundle 3
+## Excercise 1
+```
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git log
+commit c5e7838e72f9106200fb5da5ac63f5f5e32d1c6a (HEAD -> ft/contact-page, origin/master, master)
+commit c5e7838e72f9106200fb5da5ac63f5f5e32d1c6a (HEAD -> ft/contact-page, origin/master, master)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:37:55 2024 +0200
+
+    made some changes to the services file
+
+commit 64a2e4216b4ca4e5f3d88936cece51ab6958da8b
+Merge: 3d95f2e a4f0cb3
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:33:26 2024 +0200
+
+    Merge pull request #2 from Hassanadelani1/ft/service-redesign
+
+    made some changes to the services page
+
+commit a4f0cb3bcea9916f3e95a2c40eda70a467b3d75e (origin/ft/service-redesign, ft/service-redesign)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:30:37 2024 +0200
+
+    made some changes to the services page
+
+commit 3d95f2e176b71b9c96d6eccdc696003133da07ef
+Merge: be9edb4 0c02a1e
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:22:26 2024 +0200
+
+    Merge pull request #1 from Hassanadelani1/ft/bundle-2
+
+    bundle 2 exercise 1 (confirmed the pull request)
+
+commit c5e7838e72f9106200fb5da5ac63f5f5e32d1c6a (HEAD -> ft/contact-page, origin/master, master)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:37:55 2024 +0200
+
+    made some changes to the services file
+
+commit 64a2e4216b4ca4e5f3d88936cece51ab6958da8b
+Merge: 3d95f2e a4f0cb3
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:33:26 2024 +0200
+
+    Merge pull request #2 from Hassanadelani1/ft/service-redesign
+
+    made some changes to the services page
+
+commit a4f0cb3bcea9916f3e95a2c40eda70a467b3d75e (origin/ft/service-redesign, ft/service-redesign)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:30:37 2024 +0200
+
+    made some changes to the services page
+
+commit 3d95f2e176b71b9c96d6eccdc696003133da07ef
+Merge: be9edb4 0c02a1e
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:22:26 2024 +0200
+
+    Merge pull request #1 from Hassanadelani1/ft/bundle-2
+
+    bundle 2 exercise 1 (confirmed the pull request)
+
+commit 0c02a1e31feea583faaca82340ea8a6f3d671d96 (origin/ft/bundle-2, ft/bundle-2)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 12:04:25 2024 +0200
+
+    bundle 2 exercise 1
+
+commit be9edb41497d0e2a68c331569ca0624492c29e19
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 11:29:55 2024 +0200
+
+    Update README.md
+
+commit 148ffdecc220040040111cd3820bf090e3fefe94
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 10:56:40 2024 +0200
+
+    commiting the changes
+
+commit be604d49942b898d5d708100f4416920189ca451 (dev)
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Tue Dec 17 13:24:14 2024 +0200
+
+    Update README.md
+
+commit a7d2f3cc7d5cc8a7d695e813914a75ad1a53389a
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Tue Dec 17 12:24:23 2024 +0200
+
+    Update README.md
+
+commit 08a565e86aaa3dfa9c80e579fa3fb0100153c6b9
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Tue Dec 17 12:20:00 2024 +0200
+
+    first commit
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git log --oneline]
+fatal: unrecognized argument: --oneline]
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git log --oneline
+c5e7838 (HEAD -> ft/contact-page, origin/master, master) made some changes to the services file
+64a2e42 Merge pull request #2 from Hassanadelani1/ft/service-redesign
+a4f0cb3 (origin/ft/service-redesign, ft/service-redesign) made some changes to the services page
+3d95f2e Merge pull request #1 from Hassanadelani1/ft/bundle-2
+0c02a1e (origin/ft/bundle-2, ft/bundle-2) bundle 2 exercise 1
+be9edb4 Update README.md
+148ffde commiting the changes
+be604d4 (dev) Update README.md
+a7d2f3c Update README.md
+08a565e first commit
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git log ft/team-page
+commit f23a2eb4068f7bc03933f413032e4192e6e857dc (origin/ft/team-page, ft/team-page)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:56:43 2024 +0200
+
+    made some changes to the team page
+
+commit c5e7838e72f9106200fb5da5ac63f5f5e32d1c6a (HEAD -> ft/contact-page, origin/master, master)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:37:55 2024 +0200
+
+    made some changes to the services file
+
+commit 64a2e4216b4ca4e5f3d88936cece51ab6958da8b
+Merge: 3d95f2e a4f0cb3
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:33:26 2024 +0200
+
+    Merge pull request #2 from Hassanadelani1/ft/service-redesign
+
+    made some changes to the services page
+
+commit a4f0cb3bcea9916f3e95a2c40eda70a467b3d75e (origin/ft/service-redesign, ft/service-redesign)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:30:37 2024 +0200
+
+    made some changes to the services page
+
+commit 3d95f2e176b71b9c96d6eccdc696003133da07ef
+Merge: be9edb4 0c02a1e
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:22:26 2024 +0200
+
+    Merge pull request #1 from Hassanadelani1/ft/bundle-2
+
+    bundle 2 exercise 1 (confirmed the pull request)
+
+commit 0c02a1e31feea583faaca82340ea8a6f3d671d96 (origin/ft/bundle-2, ft/bundle-2)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 12:04:25 2024 +0200
+
+    bundle 2 exercise 1
+
+commit f23a2eb4068f7bc03933f413032e4192e6e857dc (origin/ft/team-page, ft/team-page)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:56:43 2024 +0200
+
+    made some changes to the team page
+
+commit c5e7838e72f9106200fb5da5ac63f5f5e32d1c6a (HEAD -> ft/contact-page, origin/master, master)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:37:55 2024 +0200
+
+    made some changes to the services file
+
+commit 64a2e4216b4ca4e5f3d88936cece51ab6958da8b
+Merge: 3d95f2e a4f0cb3
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:33:26 2024 +0200
+
+    Merge pull request #2 from Hassanadelani1/ft/service-redesign
+
+    made some changes to the services page
+
+commit a4f0cb3bcea9916f3e95a2c40eda70a467b3d75e (origin/ft/service-redesign, ft/service-redesign)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:30:37 2024 +0200
+
+    made some changes to the services page
+
+commit 3d95f2e176b71b9c96d6eccdc696003133da07ef
+Merge: be9edb4 0c02a1e
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 13:22:26 2024 +0200
+
+    Merge pull request #1 from Hassanadelani1/ft/bundle-2
+
+    bundle 2 exercise 1 (confirmed the pull request)
+
+commit 0c02a1e31feea583faaca82340ea8a6f3d671d96 (origin/ft/bundle-2, ft/bundle-2)
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 12:04:25 2024 +0200
+
+    bundle 2 exercise 1
+
+commit be9edb41497d0e2a68c331569ca0624492c29e19
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 11:29:55 2024 +0200
+
+    Update README.md
+
+commit 148ffdecc220040040111cd3820bf090e3fefe94
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Wed Dec 18 10:56:40 2024 +0200
+
+    commiting the changes
+
+commit be604d49942b898d5d708100f4416920189ca451 (dev)
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Tue Dec 17 13:24:14 2024 +0200
+
+    Update README.md
+
+commit a7d2f3cc7d5cc8a7d695e813914a75ad1a53389a
+Author: Hassan Adelani Luqman <luqmanadelani1@gmail.com>
+Date:   Tue Dec 17 12:24:23 2024 +0200
+
+    Update README.md
+
+commit 08a565e86aaa3dfa9c80e579fa3fb0100153c6b9
+Author: Hassanadelani1 <luqmanadelani1@gmail.com>
+Date:   Tue Dec 17 12:20:00 2024 +0200
+
+    first commit
+
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git switch ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/ft/team-page'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/team-page)
+$ git rev-parse ft/team-page
+f23a2eb4068f7bc03933f413032e4192e6e857dc
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/team-page)
+$ git switch ft/contact-page
+Switched to branch 'ft/contact-page'
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git cherry-pick f23a2eb4068f7bc03933f413032e4192e6e857dc
+[ft/contact-page 8a005cb] made some changes to the team page
+ Date: Wed Dec 18 13:56:43 2024 +0200
+ 1 file changed, 1 insertion(+)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ ls
+README.md  about.html  home.html  service.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        service.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git add .
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git commit -m 'made some changes to the contact page'
+[ft/contact-page 8874f8f] made some changes to the contact page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 service.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 561 bytes | 93.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/Hassanadelani1/gym-GIT-exercises/pull/new/ft/contact-page
+remote:
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git branch ft/faq-page
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ touch faq.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ code faq.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Your branch is up to date with 'origin/ft/contact-page'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        faq.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git add .
+gt
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git commit -m 'created the faq file'
+[ft/contact-page e01e232] created the faq file
+ 1 file changed, 11 insertions(+)
+ create mode 100644 faq.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 432 bytes | 216.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+   8874f8f..e01e232  ft/contact-page -> ft/contact-page
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git revert f23a2eb4068f7bc03933f413032e4192e6e857dc
+[ft/contact-page 247a8be] Revert "made some changes to the team page"
+ 1 file changed, 1 deletion(-)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Your branch is ahead of 'origin/ft/contact-page' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git add .
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Your branch is ahead of 'origin/ft/contact-page' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git commit -m 'reverted the changes in the last commit on the team page'
+On branch ft/contact-page
+Your branch is ahead of 'origin/ft/contact-page' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 347 bytes | 347.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+   e01e232..247a8be  ft/contact-page -> ft/contact-page
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/contact-page)
+$ git status
+On branch ft/contact-page
+Your branch is up to date with 'origin/ft/contact-page'.
+
+nothing to commit, working tree clean
+```
+
