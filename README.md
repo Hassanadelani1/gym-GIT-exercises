@@ -1871,4 +1871,144 @@ To https://github.com/Hassanadelani1/gym-GIT-exercises.git
  * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
 branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 ```
+# Bundle 4
+## Exercise 1
+```
+
+HP@Hassan MINGW64 ~
+$ ls
+ -1.14-windows.xml
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ IntelGraphicsProfiles/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+ SendTo@
+'Start Menu'@
+ Templates@
+ Tracing/
+ Videos/
+'WPS Cloud Files'/
+ a/
+ anaconda3/
+ c/
+ gym-GIT-exercises/
+ index.html
+ index.js
+ js
+ letter.txt
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ prac
+ vid.txt
+
+HP@Hassan MINGW64 ~
+$ cd gym-GIT-exercises/
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (ft/home-page-redesign)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git remote add git-copy https://github.com/Hassanadelani1/git-copy
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git remote -v
+git-copy        https://github.com/Hassanadelani1/git-copy (fetch)
+git-copy        https://github.com/Hassanadelani1/git-copy (push)
+origin  https://github.com/Hassanadelani1/gym-GIT-exercises.git (fetch)
+origin  https://github.com/Hassanadelani1/gym-GIT-exercises.git (push)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ ls
+README.md  about.html  home.html  services.html  team.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ code home.html
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   home.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git add .
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git commit -m 'made some changes to the home.html file'
+[master 833812d] made some changes to the home.html file
+ 1 file changed, 1 insertion(+)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git push origin master
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Hassanadelani1/gym-GIT-exercises.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 2.02 KiB | 64.00 KiB/s, done.
+From https://github.com/Hassanadelani1/gym-GIT-exercises
+   e9e6cbb..14fbe25  master     -> origin/master
+Merge made by the 'ort' strategy.
+ README.md | 147 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 147 insertions(+)
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 641 bytes | 213.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/Hassanadelani1/gym-GIT-exercises.git
+   14fbe25..941e610  master -> master
+
+HP@Hassan MINGW64 ~/gym-GIT-exercises (master)
+$ git push git-copy master
+Enumerating objects: 53, done.
+Counting objects: 100% (53/53), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (49/49), done.
+Writing objects: 100% (53/53), 16.95 KiB | 559.00 KiB/s, done.
+Total 53 (delta 26), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (26/26), done.
+To https://github.com/Hassanadelani1/git-copy
+ * [new branch]      master -> master
+```
 
